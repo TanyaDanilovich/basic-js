@@ -16,6 +16,7 @@ function getSeason(date) {
 	if (arguments.length === 0) return "Unable to determine the time of year!";
 	if (Object.prototype.toString.call(date) !== '[object Date]' || Object.getOwnPropertySymbols(date).length !== 0) throw new Error('Invalid date!');
 
+	
 	let month = date.toLocaleDateString('en', {
 		month: 'short'
 	})
